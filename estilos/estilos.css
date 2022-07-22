@@ -36,7 +36,7 @@ header{
 	padding-right: 10px;
 	font-size: 20px;
 	font-family: Raleway;
-	color: white;
+	color: black;
 	border-radius: 3px;
 }
 .menu ul li a:hover{
@@ -46,7 +46,7 @@ header{
 .checkbtn {
 	font-size: 60px;
 	float: left;
-	color: white;
+	color: black;
 	line-height: 80px;
 	margin-right: 40px;
 	cursor: pointer;
@@ -93,7 +93,7 @@ header{
 
 	li a:hover. li a.active{
 		background: none;
-		color: white;
+		color: black;
 	}
 
 	#check:checked ~ ul{
@@ -110,8 +110,10 @@ header{
 
 .cabecera{
 	width: 100%;
-	height: 100vh;
-	background-image: url('fff.png');
+	height: 50%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: white;
 	background position: center;
 	background-repeat:no-repeat;
 	background-size: cover;
@@ -300,7 +302,19 @@ textarea {
 	}
 }
 
+.banner {
+	width: 100%;
+	height: 450px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.banner iframe{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 /*--------SCROLL-------------*/
 
@@ -356,19 +370,15 @@ textarea {
 }
 
 .container_slider {
-	max-width: 1000px;
+	width: 1000px;
 	height: 500px;
 	margin: auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 30px 10px;
+	min-width: auto;
 }
-
-input[type="radio"]{
-	display: none;
-}
-
 
 .container {
 	max-width: 800px;
@@ -383,11 +393,12 @@ input[type="radio"]{
 	position: relative;
 	width: 100%;
 	height: 100%;
+	max-width: auto;
 
 }
 .card {
 	position: absolute;
-	width: 60%;
+	width: 50%;
 	height: 100%;
 	left: 0;
 	right: 0;
@@ -623,9 +634,9 @@ img {
 }
 
 .itemCarrouselTarjeta{
-    width: 50%;
-    height: 1100px;
-	margin-left: 380px;
+    width: 65%;
+    height: 750px;
+	margin-left: 250px;
 	padding-bottom: 250px;
     text-align: center;
 	align-items: center;
